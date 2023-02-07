@@ -12,10 +12,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greting = {'Bienvenido a mi primer Nav-Bar en React'} />
-      <ItemCount/>
-      <ItemDetailContainer/>
-      <CartContainer/>
+      <ItemListContainer greting={'Bienvenido a mi primer Nav-Bar en React'} />
+      <ItemCount />
+      <ItemDetailContainer />
+      <CartContainer />
 
     </>
 
