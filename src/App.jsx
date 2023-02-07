@@ -2,6 +2,9 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import { ItemCount } from './componentes/ItemCount/ItemCount';
+import ItemDetailContainer from './componentes/ItemDetalContainer/ItemDetailContainer';
+import CartContainer from './componentes/CartContainer/CartContainer';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -9,7 +12,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greting={'Bienvenido a mi primer Nav-Bar en React'} />
+      <ItemListContainer greting = {'Bienvenido a mi primer Nav-Bar en React'} />
+      <ItemCount/>
+      <ItemDetailContainer/>
+      <CartContainer/>
 
     </>
 
