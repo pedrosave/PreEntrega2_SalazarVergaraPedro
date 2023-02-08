@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "price": 3800,
+        "title": "Play Station 5",
+        "category": "Play Station",
+        "image": "./ProductosImg/ps5.png",
+        "cantidad":1
+    },
+    {
+        "id": 2,
+        "price": 1550,
+        "title": "Play Station VR",
+        "category": "Play Station",
+        "image": "./ProductosImg/psvr.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 3,
+        "price": 2850,
+        "title": "XBOX Serie X",
+        "category": "XBOX",
+        "image": "./ProductosImg/xbox-serie-x-card.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 4,
+        "price": 2350,
+        "title": "XBOX Serie S",
+        "category": "XBOX",
+        "image": "./ProductosImg/xbox-serie-s-card.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 5,
+        "price": 1230,
+        "title": "Nintendo Switch Lite",
+        "category": "Nintendo",
+        "image": "./ProductosImg/nintendo lite.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 6,
+        "price": 1850,
+        "title": "Nintendo Switch",
+        "category": "Nintendo",
+        "image": "./ProductosImg/switch.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 7,
+        "price": 290,
+        "title": "Switch Control",
+        "category": "Nintendo",
+        "image": "./ProductosImg/controles.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 8,
+        "price": 340,
+        "title": "Mando XBOX",
+        "category": "XBOX",
+        "image": "./ProductosImg/mando-xbox-card.png",
+        "cantidad":1
+
+    },
+    {
+        "id": 9,
+        "price": 450,
+        "title": "Mando PS5",
+        "category": "Play Station",
+        "image": "./ProductosImg/mando ps55555555.png",
+        "cantidad":1
+
+    }
+]
