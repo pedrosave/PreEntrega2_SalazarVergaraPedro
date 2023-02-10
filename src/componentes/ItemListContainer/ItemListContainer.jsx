@@ -1,18 +1,36 @@
 import { useEffect, useState } from "react"
+import { Link, useParams } from "react-router-dom"
 import { gFetch } from "../../utils/gFetch"
+import ItemList from "../ItemList/ItemList"
 
 const ItemListContainer = ({ greting }) => {
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
 
+    const { idCategoria } = useParams()
+
+
     useEffect(() => {
-        gFetch()
-            .then(res => {
-                setProductos(res)
-            })
-            .catch(error => console.log(error))
-            .finally(() => setLoading(false))
-    }, [])
+        if (idCategoria) {
+            gFetch()
+                .then(res => {
+                    setProductos(res.filter(producto => producto.categoria === idCategoria))
+                })
+                .catch(error => console.log(error))
+                .finally(() => setLoading(false))
+        } else {
+            gFetch()
+                .then(res => {
+                    setProductos(res)
+                })
+                .catch(error => console.log(error))
+                .finally(() => setLoading(false))
+        }
+
+    }, [idCategoria])
+
+    console.log(idCategoria)
+
 
     console.log(productos)
 
@@ -26,29 +44,9 @@ const ItemListContainer = ({ greting }) => {
                 display: "flex",
                 flexWrap: "wrap",
             }}>
-                {productos.map(producto =>
-                    <div key={producto.id} className='card w-25 mt-3'>
-                        <div className='card-header'>
-                            {producto.title}
-                        </div>
-                        <div className='card-body'>
-                            <img src={producto.image} alt='image' className="w-50" />
-                        </div>
-                        <div>
-                            {producto.price}
-                        </div>
-                        <div className='card-footer'>
-                            <button className='btn btn-outline-dark w-100'>Detalle</button>
-                        </div>
-
-                    </div>)}
+                <ItemList productos={productos} />
             </div>
 
-
-        // <h1>
-        //     {greting}
-
-        // </h1>
     )
 }
 
